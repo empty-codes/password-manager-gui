@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main1",
+            "request": "launch",
+            "mainClass": "javafx.Main1",
+            "projectName": "JavaFX_4fae2b8e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Login",
+            "request": "launch",
+            "mainClass": "javafx.Login",
+            "projectName": "JavaFX_4fae2b8e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SecondStage",
+            "request": "launch",
+            "mainClass": "javafx.SecondStage",
+            "projectName": "JavaFX_4fae2b8e"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "javafx.Main",
