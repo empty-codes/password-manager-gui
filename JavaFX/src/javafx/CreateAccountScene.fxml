@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.MainSceneController">
    <children>
-      <Label fx:id="createacclabel" layoutX="275.0" layoutY="68.0" prefHeight="37.0" prefWidth="195.0" text="Create An Account">
+      <Label fx:id="sceneheading" layoutX="275.0" layoutY="68.0" prefHeight="37.0" prefWidth="195.0" text="Create An Account">
          <font>
             <Font name="Calibri" size="24.0" />
          </font>
