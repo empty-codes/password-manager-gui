@@ -7,68 +7,73 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.2700534759358289" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardSceneController">
+<SplitPane dividerPositions="0.2700534759358289" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardSceneController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="194.0">
          <children>
-            <Label fx:id="logotext" layoutX="35.0" layoutY="24.0" prefHeight="52.0" prefWidth="70.0" text="PW.">
+            <Label fx:id="logotext" layoutX="79.0" layoutY="15.0" prefHeight="119.0" prefWidth="171.0" text="PW.">
                <font>
-                  <Font name="System Bold" size="30.0" />
+                  <Font name="System Bold" size="81.0" />
                </font>
             </Label>
-            <Button fx:id="dmenuactive" alignment="TOP_LEFT" layoutX="10.0" layoutY="117.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: black;" text="Dashboard">
+            <Button fx:id="dmenuactive" alignment="TOP_LEFT" layoutX="56.0" layoutY="152.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Dashboard">
                <font>
-                  <Font size="16.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="gpwmenu" alignment="TOP_LEFT" layoutX="10.0" layoutY="182.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Generate password">
+            <Button fx:id="gpwmenu" alignment="TOP_LEFT" layoutX="56.0" layoutY="217.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Generate password">
                <font>
-                  <Font size="16.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="spwmenu" alignment="TOP_LEFT" layoutX="10.0" layoutY="246.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Saved passwords">
+            <Button fx:id="spwmenu" alignment="TOP_LEFT" layoutX="56.0" layoutY="360.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Saved passwords">
                <font>
-                  <Font size="16.0" />
+                  <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="logoutbutton" alignment="TOP_CENTER" layoutX="56.0" layoutY="521.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Log out">
+            <Button fx:id="logoutbutton" alignment="TOP_CENTER" layoutX="111.0" layoutY="624.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Log out">
                <font>
-                  <Font size="16.0" />
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="savepw" alignment="TOP_LEFT" layoutX="56.0" layoutY="286.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" text="Save password">
+               <font>
+                  <Font size="18.0" />
                </font>
             </Button>
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="521.0">
          <children>
-            <Label fx:id="sceneheading" layoutX="37.0" layoutY="43.0" prefHeight="40.0" prefWidth="229.0" text="Hello username,">
+            <Label fx:id="sceneheading" layoutX="62.0" layoutY="94.0" prefHeight="40.0" prefWidth="229.0" text="Hello username,">
                <font>
-                  <Font name="System Bold" size="17.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="subsceneheading" layoutX="37.0" layoutY="74.0" prefHeight="26.0" prefWidth="240.0" text="How can we help you today?">
+            <Label fx:id="subsceneheading" layoutX="62.0" layoutY="125.0" prefHeight="30.0" prefWidth="278.0" text="How can we help you today?">
                <font>
-                  <Font size="15.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
-            <ListView fx:id="gpwbox" layoutX="37.0" layoutY="137.0" prefHeight="201.0" prefWidth="229.0" />
-            <Label fx:id="text" layoutX="54.0" layoutY="228.0" prefHeight="35.0" prefWidth="134.0" text="Generate Password">
+            <ListView fx:id="gpwbox" layoutX="64.0" layoutY="193.0" prefHeight="229.0" prefWidth="267.0" />
+            <ListView fx:id="spwbox" layoutX="379.0" layoutY="193.0" prefHeight="229.0" prefWidth="267.0" />
+            <Label fx:id="text" layoutX="85.0" layoutY="292.0" prefHeight="35.0" prefWidth="151.0" text="Generate Password">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <ListView fx:id="spwbox" layoutX="284.0" layoutY="137.0" prefHeight="201.0" prefWidth="229.0" />
-            <Label fx:id="text" layoutX="303.0" layoutY="228.0" prefHeight="35.0" prefWidth="134.0" text="Saved Passwords">
+            <Label fx:id="text" layoutX="407.0" layoutY="292.0" prefHeight="35.0" prefWidth="134.0" text="Saved Passwords">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="text" alignment="TOP_LEFT" layoutX="54.0" layoutY="263.0" prefHeight="62.0" prefWidth="207.0" text="By entering your purpose and a few details, have a password generated for you." wrapText="true">
+            <Label fx:id="text" alignment="TOP_LEFT" layoutX="85.0" layoutY="327.0" prefHeight="81.0" prefWidth="229.0" text="By entering your purpose and a few details, have a password generated for you." wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="text" alignment="TOP_LEFT" layoutX="303.0" layoutY="263.0" prefHeight="62.0" prefWidth="192.0" text="Contains a list of generated passwords that you have accepted and make use of." wrapText="true">
+            <Label fx:id="text" alignment="TOP_LEFT" layoutX="407.0" layoutY="327.0" prefHeight="81.0" prefWidth="200.0" text="Contains a list of generated passwords that you have accepted and make use of." wrapText="true">
                <font>
-                  <Font size="14.0" />
+                  <Font size="16.0" />
                </font>
             </Label>
          </children></AnchorPane>
