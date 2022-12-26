@@ -45,4 +45,13 @@ so that if your file is not found then the program doesnt blow up and gives you 
     stage.setScene(scene);
     stage.show();
    }
+
+public void switchToSecQuestionsScene(ActionEvent event) throws IOException {
+   Parent root = FXMLLoader.load(getClass().getResource("SecQuestionsScene.fxml"));
+   stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+   scene = new Scene(root);
+   stage.setScene(scene);
+   stage.show();
+  }
+
 }
