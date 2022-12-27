@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -11,7 +13,7 @@
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="194.0">
          <children>
-            <Label fx:id="logotext" layoutX="79.0" layoutY="15.0" prefHeight="119.0" prefWidth="171.0" text="PW.">
+            <Label fx:id="logotext" layoutX="34.0" layoutY="24.0" prefHeight="119.0" prefWidth="171.0" text="PW.">
                <font>
                   <Font name="System Bold" size="81.0" />
                </font>
@@ -54,28 +56,54 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <ListView fx:id="gpwbox" layoutX="64.0" layoutY="193.0" prefHeight="229.0" prefWidth="267.0" />
-            <ListView fx:id="spwbox" layoutX="379.0" layoutY="193.0" prefHeight="229.0" prefWidth="267.0" />
-            <Label fx:id="text" layoutX="85.0" layoutY="292.0" prefHeight="35.0" prefWidth="151.0" text="Generate Password">
+            <ListView fx:id="gpwbox" layoutX="64.0" layoutY="219.0" prefHeight="203.0" prefWidth="215.0" />
+            <ListView fx:id="spwbox" layoutX="307.0" layoutY="219.0" prefHeight="203.0" prefWidth="215.0" />
+            <ListView fx:id="savepwbox" layoutX="553.0" layoutY="219.0" prefHeight="203.0" prefWidth="215.0" />
+            <Label fx:id="text" layoutX="85.0" layoutY="271.0" prefHeight="35.0" prefWidth="151.0" text="Generate Password">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="text" layoutX="407.0" layoutY="292.0" prefHeight="35.0" prefWidth="134.0" text="Saved Passwords">
+            <Label fx:id="text" layoutX="331.0" layoutY="271.0" prefHeight="35.0" prefWidth="134.0" text="Saved Passwords">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label fx:id="text" alignment="TOP_LEFT" layoutX="85.0" layoutY="327.0" prefHeight="81.0" prefWidth="229.0" text="By entering your purpose and a few details, have a password generated for you." wrapText="true">
+            <Label fx:id="text" alignment="TOP_LEFT" layoutX="85.0" layoutY="305.0" prefHeight="108.0" prefWidth="188.0" text="By entering your purpose and a few details, have a password generated for you." wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="text" alignment="TOP_LEFT" layoutX="407.0" layoutY="327.0" prefHeight="81.0" prefWidth="200.0" text="Contains a list of generated passwords that you have accepted and make use of." wrapText="true">
+            <Label fx:id="text" alignment="TOP_LEFT" layoutX="331.0" layoutY="309.0" prefHeight="100.0" prefWidth="180.0" text="Contains a list of generated passwords that you have accepted and make use of." wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
+            <Label fx:id="text" layoutX="574.0" layoutY="271.0" prefHeight="35.0" prefWidth="134.0" text="Save Passwords">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="text" alignment="TOP_LEFT" layoutX="571.0" layoutY="309.0" prefHeight="100.0" prefWidth="180.0" text="Manually enter new or previously existing passwords." wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="minicon" fitHeight="48.0" fitWidth="48.0" layoutX="737.0" layoutY="50.0" onMouseClicked="#minimizeWindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/icons8-subtract-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="maxicon" fitHeight="48.0" fitWidth="48.0" layoutX="785.0" layoutY="50.0" onMouseClicked="#maximizeWindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/icons8-maximize-window-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="closeicon" fitHeight="48.0" fitWidth="48.0" layoutX="833.0" layoutY="50.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/icons8-close-window-48.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
   </items>
 </SplitPane>

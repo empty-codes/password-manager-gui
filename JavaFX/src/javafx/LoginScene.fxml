@@ -5,44 +5,46 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.MainSceneController">
    <children>
-      <Label fx:id="sceneheading" layoutX="585.0" layoutY="166.0" prefHeight="46.0" prefWidth="128.0" text="Log In">
+      <Label fx:id="sceneheading" layoutX="545.0" layoutY="132.0" prefHeight="46.0" prefWidth="128.0" text="Log In">
          <font>
             <Font name="Calibri Bold" size="40.0" />
          </font>
       </Label>
-      <Label fx:id="usernamelabel" layoutX="483.0" layoutY="235.0" prefHeight="27.0" prefWidth="114.0" text="Username">
+      <Label fx:id="usernamelabel" layoutX="443.0" layoutY="201.0" prefHeight="27.0" prefWidth="114.0" text="Username">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="usernameinput" layoutX="483.0" layoutY="274.0" prefHeight="37.0" prefWidth="343.0" promptText="Enter your username">
+      <TextField fx:id="usernameinput" layoutX="443.0" layoutY="240.0" prefHeight="37.0" prefWidth="343.0" promptText="Enter your username">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <Label fx:id="passwordlabel" layoutX="483.0" layoutY="324.0" prefHeight="27.0" prefWidth="86.0" text="Password">
+      <Label fx:id="passwordlabel" layoutX="443.0" layoutY="290.0" prefHeight="27.0" prefWidth="86.0" text="Password">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="newuserquestion" layoutX="492.0" layoutY="598.0" text="Are you a new user?">
+      <Label fx:id="newuserquestion" layoutX="450.0" layoutY="573.0" text="Are you a new user?">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <PasswordField fx:id="passwordinput" layoutX="480.0" layoutY="358.0" prefHeight="37.0" prefWidth="343.0" promptText="Enter your password">
+      <PasswordField fx:id="passwordinput" layoutX="440.0" layoutY="324.0" prefHeight="37.0" prefWidth="343.0" promptText="Enter your password">
          <font>
             <Font size="14.0" />
          </font></PasswordField>
-      <Button fx:id="loginbutton" layoutX="480.0" layoutY="506.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="343.0" text="Log In">
+      <Button fx:id="loginbutton" layoutX="440.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="343.0" text="Log In">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Hyperlink fx:id="createacclink" layoutX="652.0" layoutY="594.0" onAction="#switchToCreateAccountScene" text="Create an account" underline="true">
+      <Hyperlink fx:id="createacclink" layoutX="610.0" layoutY="569.0" onAction="#switchToCreateAccountScene" text="Create an account" underline="true">
          <font>
             <Font size="18.0" />
          </font>
@@ -52,9 +54,24 @@
             <Font name="System Bold" size="80.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="forgotpasswordlink" layoutX="592.0" layoutY="428.0" onAction="#switchToPasswordResetScene1" text="Forgot password?">
+      <Hyperlink fx:id="forgotpasswordlink" layoutX="552.0" layoutY="394.0" onAction="#switchToPasswordResetScene1" text="Forgot password?">
          <font>
             <Font size="14.0" />
          </font></Hyperlink>
+      <ImageView fx:id="minicon" fitHeight="48.0" fitWidth="48.0" layoutX="1089.0" layoutY="50.0" onMouseClicked="#minimizeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-subtract-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="maxicon" fitHeight="48.0" fitWidth="48.0" layoutX="1137.0" layoutY="50.0" onMouseClicked="#maximizeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-maximize-window-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeicon" fitHeight="48.0" fitWidth="48.0" layoutX="1185.0" layoutY="50.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-close-window-48.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

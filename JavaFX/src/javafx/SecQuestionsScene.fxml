@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -58,5 +60,20 @@
             <Font size="18.0" />
          </font>
       </Hyperlink>
+      <ImageView fx:id="minicon" fitHeight="48.0" fitWidth="48.0" layoutX="1089.0" layoutY="50.0" onMouseClicked="#minimizeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-subtract-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="maxicon" fitHeight="48.0" fitWidth="48.0" layoutX="1137.0" layoutY="50.0" onMouseClicked="#maximizeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-maximize-window-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeicon" fitHeight="48.0" fitWidth="48.0" layoutX="1185.0" layoutY="50.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/icons8-close-window-48.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
