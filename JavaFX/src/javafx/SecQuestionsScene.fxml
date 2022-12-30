@@ -45,7 +45,7 @@
             <Font name="Calibri Bold" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="createaccbutton" layoutX="503.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="343.0" text="Create Account">
+      <Button fx:id="createaccbutton" layoutX="503.0" layoutY="482.0" mnemonicParsing="false" onAction="#accountPopup" prefHeight="25.0" prefWidth="343.0" text="Create Account">
          <font>
             <Font size="14.0" />
          </font>
