@@ -2,6 +2,8 @@ package javafx;
 
 import java.io.IOException;
 
+import javafx.animation.Interpolator;
+import javafx.animation.ScaleTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,7 +11,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 public class MainSceneController {
 
@@ -85,4 +91,37 @@ private void closeWindow(MouseEvent event) {
 }
      
 
-}
+//function to show popup when create Account button clicked
+public void accountPopup(ActionEvent event) throws IOException {
+   
+   Stage popup1Stage = (Stage)((Node)event.getSource()).getScene().getWindow(); //creates new stage popup1Stage
+   double x = popup1Stage.getX();
+   double y = popup1Stage.getY();
+   try {
+      Parent root = FXMLLoader.load(getClass().getResource("AccountPopupScene.fxml"));
+      ScaleTransition st = new ScaleTransition(Duration.millis(50), root); 
+      // i honestly don't know what these are for, saw it in the youtube video
+      st.setInterpolator(Interpolator.EASE_BOTH);
+      st.setFromX(0);
+      st.setFromY(0);
+      st.setToX(1);
+      st.setToY(1);
+
+      Stage stage = new Stage(); //creates new stage again???
+      Scene scene = new Scene(root, 500, 300);
+      stage.initModality(Modality.APPLICATION_MODAL);
+      stage.initStyle(StageStyle.TRANSPARENT);
+      scene.setFill(Color.TRANSPARENT);
+      stage.setResizable(false);
+      stage.setScene(scene);
+      stage.show();
+      stage.setX(x + 400);  //you adjust this to center the popup
+      stage.setY(y + 250);
+   } catch (Exception e) {
+      e.printStackTrace();
+   }
+
+   }
+
+  }
+
